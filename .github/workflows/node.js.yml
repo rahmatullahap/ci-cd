@@ -12,11 +12,11 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
-    - run: cd project/
     - uses: actions/checkout@v2
     - name: Use Node.js 12
       uses: actions/setup-node@v1
       with:
         node-version: 12
+    - run: cd project/
     - run: npm i
     - run: npm test
