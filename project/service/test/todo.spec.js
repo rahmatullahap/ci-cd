@@ -2,7 +2,8 @@
 describe('todos', () => {
   describe('list', () => {
     it('get list', async () => {
-      expect('test').toHaveLength('test');
+      const t = 'test';
+      expect(t).toBe('test');
     });
   });
 });
